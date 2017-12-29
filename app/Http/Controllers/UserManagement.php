@@ -38,6 +38,7 @@ class UserManagement extends Controller
         	if($uri=="/accountslist"){}
         	else if($uri=="/history"){}
         	else if($uri=="/delete"){}
+            else if($uri=="/manager"){}
             else if($uri=="/stoptransection"){}
         	else{
         		return "redirect";
