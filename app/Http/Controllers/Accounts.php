@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-use App\Http\Controllers\CommandHandler\AccountCommandHandler;
+use App\Http\Controllers\CommandHandler\AccountDepositCommandHandler;
 use App\Http\Controllers\CommandHandler\AccountTransferCommandHandler;
 use App\Http\Controllers\Command\AccountDepositeCommand;
 use App\Http\Controllers\Command\AccountTransferCommand;
@@ -46,7 +46,7 @@ class Accounts extends Controller
     	$acHolder = Request();
 
         if($acHolder->input('amount')){
-            $handleAccDepo = new AccountCommandHandler(new AccountDepositeCommand($acHolder->user()->email, $acHolder->input('amount')));
+            $handleAccDepo = new AccountDepositCommandHandler(new AccountDepositeCommand($acHolder->user()->email, $acHolder->input('amount')));
 
             $handleAccDepo->handleDeposite();
 

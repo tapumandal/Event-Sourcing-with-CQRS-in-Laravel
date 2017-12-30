@@ -10,7 +10,7 @@ use App\Http\Controllers\Event\CreateDepositeEvent;
 use App\Http\Controllers\Event\EventStore;
 use App\Http\Controllers\EventHandler\EventHandler;
 
-class AccountCommandHandler extends Controller
+class AccountDepositCommandHandler extends Controller
 {
     //
     private $accDepoCommand = "";
