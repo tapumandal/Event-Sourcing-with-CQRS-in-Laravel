@@ -7,6 +7,7 @@ Event sourcing is nothing but a term or architectural pattern. If something or a
 (called event) and stored in one place and at a certen time if we could fetch those event form that 
 particular place is called Event Sourcing.
 
+![es](https://user-images.githubusercontent.com/27927662/34467456-981665a6-ef1c-11e7-9b15-dc949c93ce13.png)
 
 
 # What is CQRS
@@ -18,6 +19,7 @@ introduce CQRS to us. CQRS pattern helps software architect to design the applic
 where reading and writing are separate.
 It makes the application more secure and maximize the performance.
 
+![cqrs](https://user-images.githubusercontent.com/27927662/34467460-ba37faaa-ef1c-11e7-86c3-4b6638b6e827.png)
 
 
 # Why programmer use or do not use Event Sourcing
@@ -144,8 +146,7 @@ Registration is required for both User.
 				event is handled deleting specific row of deposit table.
 		
 
-
-
+![es with cqrs](https://user-images.githubusercontent.com/27927662/34467464-d2ff2d2e-ef1c-11e7-99ed-5a654ffe4229.png)
 
 
 
