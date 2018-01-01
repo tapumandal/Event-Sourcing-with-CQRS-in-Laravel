@@ -1,7 +1,7 @@
 # Event-Sourcing-with-CQRS-in-Laravel
 
 
-# What is Event Sourcing
+## What is Event Sourcing
 
 Event sourcing is nothing but a term or architectural pattern. If something or anything happen 
 (called event) and stored in one place and at a certen time if we could fetch those event form that 
@@ -10,7 +10,7 @@ particular place is called Event Sourcing.
 ![es](https://user-images.githubusercontent.com/27927662/34467456-981665a6-ef1c-11e7-9b15-dc949c93ce13.png)
 
 
-# What is CQRS
+## What is CQRS
 
 CQRS is the sort form of Command Query Responsibility Segregation.
 What does it mean? Here Command and Query both are task. Command means occurring any changes and Query 
@@ -22,7 +22,7 @@ It makes the application more secure and maximize the performance.
 ![cqrs](https://user-images.githubusercontent.com/27927662/34467460-ba37faaa-ef1c-11e7-86c3-4b6638b6e827.png)
 
 
-# Why programmer use or do not use Event Sourcing
+## Why programmer use or do not use Event Sourcing
 
 Event Sourcing isn't something you could use in every application. The most toughest thing of event 
 sourcing is to understant where to use it. It makes the application traceable and secure. If any how 
@@ -35,7 +35,7 @@ or simple CRUD application will just make it complex without giving significant 
 
 
 
-# Why programmer use CQRS
+## Why programmer use CQRS
 
 It is one of the most intesting design pattern if used properly. It makes read and write indipendent 
 which balance server load and keep code clean. When ES requires complex query, CQRS makes it simple. 
@@ -43,7 +43,7 @@ Programmer implement CQRS also to handle too much database request.
 
 
 
-# About the project
+## About the project
 
 I tried to keep the projetc as simple as possible to make it understandable to the beggineers.
 
@@ -62,7 +62,7 @@ It's a demo banking system with two user types one is Account Holder and the oth
 Registration is required for both User. 
 
 
-# How i use Event Sourcing and CQRS
+## How i use Event Sourcing and CQRS
 
 	Use of database____
 		There are three table in database. users, deposits and event_store.
@@ -151,7 +151,7 @@ Registration is required for both User.
 
 
 
-# Why i use Event Sourcing and CQRS
+## Why i use Event Sourcing and CQRS
 	
 	* To track the deposit and transfer of Account Holder.
 	* To minimize the complex query like join.
