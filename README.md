@@ -63,7 +63,8 @@ Registration is required for both User.
 		** Data Reading(Query)___
 		
 			* Show Amount
-				Request goes to show method of Account Controller. Instantiate QueryService initializing Account Holder's email id. And then get the balance.
+				Request goes to show method of Account Controller. Instantiate QueryService initializing 
+				Account Holder's email id. And then get the balance.
 
 
 
