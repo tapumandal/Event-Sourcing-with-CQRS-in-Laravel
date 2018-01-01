@@ -9,8 +9,8 @@ Event sourcing is nothing but a term or architectural pattern. If something or a
 
 # What is CQRS
 
-CQRS is the sort form of Command Query Responsibility Segregation.
-What does it mean? Here Command and Query both are task. Command means occurring any changes and Query is to fetch data according application demand. Simply Command and Query is read and write. Bertrand Meyer introduce CQRS to us. CQRS pattern helps software architect to design the application architecture where reading and writing are separate.
+CQRS is the short form of Command Query Responsibility Segregation.
+What does it mean? Here Command and Query both are task. Command means occurring any changes and Query is to fetch data according application demand. Simply Command and Query is write and read. Bertrand Meyer introduce CQRS to us. CQRS pattern helps software architect to design the application architecture where reading and writing are separate.
 It makes the application more secure and maximize the performance.
 
 
