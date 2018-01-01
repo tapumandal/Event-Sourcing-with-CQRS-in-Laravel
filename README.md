@@ -146,7 +146,8 @@ Registration is required for both User.
 				event is handled deleting specific row of deposit table.
 		
 
-![es with cqrs](https://user-images.githubusercontent.com/27927662/34467464-d2ff2d2e-ef1c-11e7-99ed-5a654ffe4229.png)
+![es with cqrs](https://user-images.githubusercontent.com/27927662/34467488-bf3935e0-ef1d-11e7-87d2-41fed6dd7646.png)
+
 
 
 
