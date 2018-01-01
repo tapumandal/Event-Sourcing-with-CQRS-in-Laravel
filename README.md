@@ -72,8 +72,10 @@ Registration is required for both User.
 			* Deposit
 
 				Account Holder's request will be redirected to the Account Controller.
-				To deposit amount there is a deposit method where AccountCommandHandler is called to handle the Command(command is event identifier).
-				And pass a parameter of AccountDepositCommand where deposit command, account holder's email and amount is initialized.
+				To deposit amount there is a deposit method where AccountCommandHandler is called to handle
+				the Command(command is event identifier).
+				And pass a parameter of AccountDepositCommand where deposit command, account holder's email 
+				and amount is initialized.
 
 				In AccountCommandHandler Class, event is created in JSON format calling CreateDepositeEvent.
 
@@ -84,13 +86,16 @@ Registration is required for both User.
 			* Transfer
 
 				Amount transferring is as same as the deposit,
-				Transferring Request goes to transfer method of Account Controller, here Request data(Sender, Receiver and amount) is inintialized in AccountTransferCommand and the AccountTransferCommand object is passed to AccountTransferCommandHandler.
+				Transferring Request goes to transfer method of Account Controller, here Request 
+				data(Sender, Receiver and amount) is inintialized in AccountTransferCommand and the 
+				AccountTransferCommand object is passed to AccountTransferCommandHandler.
 				
 				In AccountTransferCommandHandler, 
 					CreateTransferEvent create transfer event.
 					EventStore store the created event.
 					And then goes to EventHandler.
-				In EventHandler transfer successfully executed if the amount is less or equal than the sender total amount otherwise the transffer failed.
+				In EventHandler transfer successfully executed if the amount is less or equal than the 
+				sender total amount otherwise the transffer failed.
 
 
 
@@ -100,7 +105,8 @@ Registration is required for both User.
 		** Data Reading(Query)___
 
 			* Show Account Deposit
-				When the request executed it comes accountsList of Manager Controller, where getAccountsList method of AdminQueryService is called.
+				When the request executed it comes accountsList of Manager Controller, where getAccountsList 
+				method of AdminQueryService is called.
 			* History
 				Every event is showed here. History request first comes to history method of Manager Class.
 				Then goes to getHistory of AdminQueryService.
