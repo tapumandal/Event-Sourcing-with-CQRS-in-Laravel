@@ -4,7 +4,9 @@ namespace App\Http\Controllers\AdminAuth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
+// use Auth;
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
@@ -18,13 +20,24 @@ class LoginController extends Controller
     }
 
     public function showLoginForm()
-    {
+    {   
         return view('admin.auth.login');
     }
 
-    protected function guard()
-    {
-        return Auth::guard('admin');
+    public function login(Request $request){
+        $this->validate($request,[
+            'email' => 'required|email',
+            'password' => 'required|min:6'
+            ]);
+
+        if(Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->remember)){
+            return redirect('/manager');
+            // echo 'LOGGED IN';
+        }
+
+        // return redirect()->intended(route('admin/login'));
+        // echo 'NOT LOGGED IN';
+
     }
 }
 

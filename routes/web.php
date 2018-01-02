@@ -33,14 +33,15 @@ Route::group(['middleware' => ['auth']], function(){
 	Route::get('/deposite', 'Accounts@deposite');
 
 	Route::get('/transfer', 'Accounts@transfer');
-	Route::post('/	transfer', 'Accounts@transfer');
+	Route::post('/transfer', 'Accounts@transfer');
 
 
 
-	//Manager Route
-	// Route::get('manager', function () {
- //    	return view('manager.panel');
-	// });
+});
+
+
+Route::group(['middleware' => ['auth:admin']], function(){
+
 	Route::get('/manager', 'Manager@manage');
 	
 	Route::get('/accountslist', 'Manager@accountsList');
@@ -55,10 +56,9 @@ Route::group(['middleware' => ['auth']], function(){
 
 	Route::get('/stoptransection', 'Manager@stopTransection');
 	Route::post('/stoptransection', 'Manager@stopTransection');
-
-
-
 });
+
+
 
 Route::get('admin/login', 'AdminAuth\LoginController@showLoginForm');
 Route::post('admin/login', 'AdminAuth\LoginController@login');

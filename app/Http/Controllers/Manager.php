@@ -17,29 +17,31 @@ use App\Http\Controllers\UserManagement;
 use App\Http\Controllers\CommandHandler\AccountStopCommandHandler;
 use App\Http\Controllers\Command\AccountStopCommand;
 
+
+
 class Manager extends Controller
 {
     //
     function __construct(){
-       
+       // $this->middleware("auth:admin");
     }
     
     public function manage(){
-        $redirect = new UserManagement();
-        $check = $redirect->redirectUser();
-        if($check == "redirect"){
-            return redirect('view');
-        }
+        // $redirect = new UserManagement();
+        // $check = $redirect->redirectUser();
+        // if($check == "redirect"){
+        //     return redirect('view');
+        // }
 
         return view('manager.panel');
     }
 
     public function accountsList(){
-        $redirect = new UserManagement();
-        $check = $redirect->redirectUser();
-        if($check == "redirect"){
-            return redirect('view');
-        }
+        // $redirect = new UserManagement();
+        // $check = $redirect->redirectUser();
+        // if($check == "redirect"){
+        //     return redirect('view');
+        // }
 
         $acHolder = Request();
     	$show = new AdminQueryService();
@@ -51,11 +53,11 @@ class Manager extends Controller
     }
 
     public function history(){
-        $redirect = new UserManagement();
-        $check = $redirect->redirectUser();
-        if($check == "redirect"){
-            return redirect('view');
-        }
+        // $redirect = new UserManagement();
+        // $check = $redirect->redirectUser();
+        // if($check == "redirect"){
+        //     return redirect('view');
+        // }
 
 
         $acHolder = Request();
@@ -66,11 +68,11 @@ class Manager extends Controller
     }
 
     public function delete(){
-        $redirect = new UserManagement();
-        $check = $redirect->redirectUser();
-        if($check == "redirect"){
-            return redirect('view');
-        }
+        // $redirect = new UserManagement();
+        // $check = $redirect->redirectUser();
+        // if($check == "redirect"){
+        //     return redirect('view');
+        // }
 
 
         $account = Request();
@@ -88,11 +90,11 @@ class Manager extends Controller
     }
 
     public function stopTransection(){
-        $redirect = new UserManagement();
-        $check = $redirect->redirectUser();
-        if($check == "redirect"){
-            return redirect('view');
-        }
+        // $redirect = new UserManagement();
+        // $check = $redirect->redirectUser();
+        // if($check == "redirect"){
+        //     return redirect('view');
+        // }
 
 
         $account = Request();
