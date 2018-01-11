@@ -42,16 +42,7 @@
 
 
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">User Type</label>
-
-                            <div class="col-md-6">
-                                <select class="form-control" name="type">
-                                    <option  value="account_holder">Account Holder</option>
-                                    <option value="manager">Manager</option>
-                                </select>
-                            </div>
-                        </div>
+                        <input id="" type="hidden" class="form-control" name="type" value="account_holder" required>
 
 
 

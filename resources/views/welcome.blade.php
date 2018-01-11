@@ -71,8 +71,11 @@
                     @auth
                         <a href="{{ url('/view') }}">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">Account Holder Login</a>
+                        <a href="{{ route('register') }}">Account Holder Register</a>
+                        /
+                        <a href="{{ Url('admin/login') }}">Manager Login</a>
+                        <a href="{{ Url('admin/register') }}">Manager Register</a>
                     @endauth
                 </div>
             @endif
