@@ -16,7 +16,7 @@ class CreateDepositTable extends Migration
         Schema::create('deposits', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email');
-            $table->string('amound');
+            $table->string('amount');
             $table->timestamps();
         });
     }
