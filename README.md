@@ -31,13 +31,13 @@ and solved.
 As data reading gets the priority when events are transferd to the query database, it becomes easy and 
 load less to read the data which makes the application faster and efficient.
 Event Sourcing is good for big and complex project where you may need historic event. Using ES in small 
-or simple CRUD application will just make it complex without giving significant benifits.
+or simple CRUD application will just make it complex without giving significant benefits.
 
 
 
 ### Why programmer use CQRS
 
-It is one of the most intesting design pattern if used properly. It makes read and write indipendent 
+It is one of the most intesting design pattern if used properly. It makes read and write independent 
 which balance server load and keep code clean. When ES requires complex query, CQRS makes it simple. 
 Programmer implement CQRS also to handle too much database request.
 
@@ -45,12 +45,12 @@ Programmer implement CQRS also to handle too much database request.
 
 ### About the project
 
-I tried to keep the projetc as simple as possible to make it understandable to the beggineers.
+I tried to keep the projetc as simple as possible to make it understandable to the beginners.
 
 It's a demo banking system with two user types one is Account Holder and the other one is Manager.
 
 > Account Holder Activity...  
-	Account Holder will be able to deposite money.
+	Account Holder will be able to deposit money.
 	and
 	Will be able to transfer to the another Account Holder's Account.
 
